@@ -115,7 +115,7 @@ class TicketListSerializer(serializers.ModelSerializer):
 
 
 class TicketDetailSerializer(TicketSerializer):
-    movie_session = MovieSessionSerializer(many=False, read_only=False)
+    movie_session = MovieSessionSerializer()
 
 
 class MovieSessionDetailSerializer(MovieSessionSerializer):
